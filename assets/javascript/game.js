@@ -54,6 +54,7 @@ $(document).ready(function(){
     var i = 0;
     var timer = 30;
     var intervalId;
+    var correct = 0;
     function showQuestion(){
         $("#question-view").html(questionArray[i].question);
         $("#button1").text(questionArray[i].answerArray[0]);
@@ -68,9 +69,9 @@ $(document).ready(function(){
     showQuestion();
     run();
     
-    var timeout1 = setTimeout(function(){
-        showQuestion();
-    }, 5000);
+    // var timeout1 = setTimeout(function(){
+    //     showQuestion();
+    // }, 5000);
 
     function decrement() {
         timer--;
@@ -78,6 +79,8 @@ $(document).ready(function(){
         if(timer === 0) {
             stop ();
             alert("Time's Up!");
+        } else {
+            
         }
     }
     function run () {
@@ -89,15 +92,27 @@ $(document).ready(function(){
     }
     var userGuess;
     $("button").on("click",function(){
-        userGuess = $(this)
-        console.log($(userGuess).data("correct"))
+        userGuess = $(this);
+        stop();
+        timer = 30;
         if($(this).data("correct") === "true"){
             console.log("correct")
-            $(this).data("correct", "")
+            $(this).data("correct", "");
+            correct++;
+            console.log()
         }
         else{
             console.log("incorrect")
+        };
+        if(i == 5) {
+            $("#question-view").html("Congratulations you got " + correct + " out of 5 correct!\nRefresh the page to play again!" )
+        } else {
+            showQuestion();
+            run();
         }
+        
+
+       
 
     })
 

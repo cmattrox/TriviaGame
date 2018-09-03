@@ -1,12 +1,8 @@
-/* body {
+body {
     background-image: url(../images/hogwarts.jpg)
 }
+.card {
+    /* padding-left: 250px; */
+    margin-left: 500px
+}
 
-.container{
-    background-color: rgba(169, 169, 169, .75) darkgrey;
-    color: white;
-    width: 700px;
-    height: 450px;
-    margin: 0 auto;
-    margin-top: 150px;
-} */
