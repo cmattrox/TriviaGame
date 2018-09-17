@@ -3,10 +3,10 @@ $(document).ready(function(){
         {
             question: "What is in the third-floor corridor in year 1?",
             answerArray : [
-                "a", 
+                "Snake", 
                 "Three headed dog",
-                "c",
-                "d"
+                "Fluffy",
+                "Spiders"
             ],
             index: 2
         },
@@ -14,18 +14,18 @@ $(document).ready(function(){
             question: "What is Lord Voldemort's real name?",
             answerArray: [
                 "Tom Riddle",
-                "b",
-                "c",
-                "d"
+                "Harry Potter",
+                "Lord Voldermort",
+                "Albus Dumbledore"
             ],
             index: 1
         },
         {
             question: "Why can't Hagrid perform magic legally?",
             answerArray: [
-                "a",
-                "b",
-                "c",
+                "He isn't a wizard",
+                "He lost his wand",
+                "He can",
                 "He was accused of opening the chamber of secrets"
             ],
             index: 4
@@ -33,20 +33,20 @@ $(document).ready(function(){
         {
             question: "What old magic saved Harry's life from Voldermort?",
             answerArray: [
-                "a",
-                "b",
+                "Potions",
+                "Spells",
                 "Love",
-                "d",
+                "Magic",
             ],
             index: 3
         },
         {
             question: "Who let Harry come back to life after he turned himself into Voldermort",
             answerArray: [
-                "a",
+                "Bellatrix",
                 "Narcissa",
-                "c",
-                "d"
+                "Hagrid",
+                "Dumbledore"
             ],
             index: 2
         },
